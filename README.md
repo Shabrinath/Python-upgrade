@@ -44,7 +44,8 @@ Replace `/usr/bin/python3.x` with the path to your current Python executable and
 
 Download the desired Python version from the official Python website and extract the archive.
 
-`wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz tar -xzf Python-3.10.2.tgz cd Python-3.10.2`
+`wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz 
+ tar -xzf Python-3.10.2.tgz cd Python-3.10.2`
 
 _Note:_ Ensure you are downloading the correct version. Replace `3.10.2` with your target version if different.
 
@@ -78,11 +79,6 @@ Choose the default Python version to use when invoking `python3`.
 
 `sudo alternatives --config python3`
 
-You will see an output similar to:
-
-
-`There are 2 programs which provide 'python3'.    Selection    Command -----------------------------------------------  + 1           /usr/local/bin/python3.8  *  2           /usr/local/bin/python3.10  Enter to keep the current selection[+], or type selection number:` 
-
 Enter the selection number corresponding to the desired Python version (e.g., `2` for Python 3.10).
 
 _Example:_
@@ -107,10 +103,6 @@ To switch back to a previous Python version or select a different one, run:
 
 Follow the on-screen instructions to choose the desired Python version.
 
-_Example:_
-
-
-`[root@hostname Python-3.10.2]# python3 --version Python 3.10.2 [root@hostname Python-3.10.2]# sudo alternatives --config python3  There are 2 programs which provide 'python3'.    Selection    Command -----------------------------------------------  + 1           /usr/local/bin/python3.8  *  2           /usr/local/bin/python3.10  Enter to keep the current selection[+], or type selection number: 1 [root@hostname Python-3.10.2]# python3 --version Python 3.8.3`
 
 ## Notes
 
