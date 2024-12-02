@@ -44,8 +44,8 @@ Replace `/usr/bin/python3.x` with the path to your current Python executable and
 
 Download the desired Python version from the official Python website and extract the archive.
 
-`wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz 
- tar -xzf Python-3.10.2.tgz cd Python-3.10.2`
+`wget https://www.python.org/ftp/python/3.10.2/Python-3.10.2.tgz `
+` tar -xzf Python-3.10.2.tgz cd Python-3.10.2`
 
 _Note:_ Ensure you are downloading the correct version. Replace `3.10.2` with your target version if different.
 
@@ -53,7 +53,8 @@ _Note:_ Ensure you are downloading the correct version. Replace `3.10.2` with yo
 
 Configure the build with optimizations and install it using `make altinstall` to prevent overwriting the default `python3` binary.
 
-`./configure --enable-optimizations sudo make altinstall`
+`./configure --enable-optimizations`
+ `sudo make altinstall`
 
 After installation, verify the new Python version:
 
